@@ -17,7 +17,7 @@ const FileUpload = ({ onFileUpload }) => {
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
 
   return (
-    <Card className="w-full max-w-md pt-6">
+    <Card className="w-full max-w-md pt-6 bg-slate-800 text-white">
       <CardContent>
         <div
           {...getRootProps()}

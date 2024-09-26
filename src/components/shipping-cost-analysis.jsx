@@ -33,7 +33,10 @@ const ShippingCostAnalysis = () => {
       style={{ backgroundColor: "#1A1D21", color: "#E5E5E5" }}
     >
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-        <CardTitle className="text-2xl font-bold" style={{ color: "#4299E1" }}>
+        <CardTitle
+          className="text-2xl font-semibold"
+          style={{ color: "#4299E1" }}
+        >
           Shipping Cost Analysis
         </CardTitle>
         <Badge

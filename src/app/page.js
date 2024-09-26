@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -25,9 +25,9 @@ export default function ShippingAnalysisPage() {
   return (
     <div
       className="min-h-screen px-8 py-8"
-      style={{ backgroundColor: "#1A1B20", color: "#E5E5E5" }}
+      style={{ backgroundColor: "#1A1D21", color: "#E5E5E5" }}
     >
-      <h1 className="text-3xl font-bold mb-8" style={{ color: "#F5A623" }}>
+      <h1 className="text-3xl font-bold mb-8" style={{ color: "#4299E1" }}>
         Shipping Cost Analysis
       </h1>
 
@@ -74,7 +74,7 @@ export default function ShippingAnalysisPage() {
           <div className="mt-8">
             <Button
               className="w-full"
-              style={{ backgroundColor: "#F5A623", color: "#1A1B20" }}
+              style={{ backgroundColor: "#4299E1", color: "#1A1D21" }}
             >
               <TrendingDown className="mr-2 h-5 w-5" />
               Renegotiate Contract

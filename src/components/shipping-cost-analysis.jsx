@@ -30,16 +30,16 @@ const ShippingCostAnalysis = () => {
   return (
     <Card
       className="w-full"
-      style={{ backgroundColor: "#1A1B20", color: "#E5E5E5" }}
+      style={{ backgroundColor: "#1A1D21", color: "#E5E5E5" }}
     >
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-        <CardTitle className="text-2xl font-bold" style={{ color: "#F5A623" }}>
+        <CardTitle className="text-2xl font-bold" style={{ color: "#4299E1" }}>
           Shipping Cost Analysis
         </CardTitle>
         <Badge
           variant="outline"
           className="flex items-center"
-          style={{ borderColor: "#F5A623", color: "#F5A623" }}
+          style={{ borderColor: "#4299E1", color: "#4299E1" }}
         >
           <Package className="mr-1 h-4 w-4" />
           {shippingData.packageCount} Packages Shipped
@@ -49,14 +49,14 @@ const ShippingCostAnalysis = () => {
         <div className="mt-4 space-y-6">
           <div
             className="flex flex-col items-center justify-center rounded-lg bg-primary/10 p-6"
-            style={{ backgroundColor: "#F5A62320" }}
+            style={{ backgroundColor: "#4299E120" }}
           >
             <span className="text-lg font-medium">
               Current Annual Shipping Spend
             </span>
             <span
               className="text-4xl font-bold mt-2"
-              style={{ color: "#F5A623" }}
+              style={{ color: "#4299E1" }}
             >
               {formatMoney(shippingData.annualSpend)}
             </span>
@@ -67,14 +67,14 @@ const ShippingCostAnalysis = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div
               className="flex flex-col items-center justify-center rounded-lg bg-secondary/10 p-4"
-              style={{ backgroundColor: "#F5A62310" }}
+              style={{ backgroundColor: "#4299E110" }}
             >
               <span className="text-sm font-medium">
                 With Average Industry Discount
               </span>
               <span
                 className="text-2xl font-bold mt-2"
-                style={{ color: "#F5A623" }}
+                style={{ color: "#4299E1" }}
               >
                 {formatMoney(
                   shippingData.avgDiscountCPP * shippingData.packageCount
@@ -86,7 +86,7 @@ const ShippingCostAnalysis = () => {
               <Badge
                 variant="secondary"
                 className="mt-2"
-                style={{ backgroundColor: "#F5A62330", color: "#F5A623" }}
+                style={{ backgroundColor: "#4299E130", color: "#4299E1" }}
               >
                 <TrendingDown className="mr-1 h-3 w-3" />
                 {calculateSavings(
@@ -98,14 +98,14 @@ const ShippingCostAnalysis = () => {
             </div>
             <div
               className="flex flex-col items-center justify-center rounded-lg bg-secondary/10 p-4"
-              style={{ backgroundColor: "#F5A62310" }}
+              style={{ backgroundColor: "#4299E110" }}
             >
               <span className="text-sm font-medium">
                 With Maximum Industry Discount
               </span>
               <span
                 className="text-2xl font-bold mt-2"
-                style={{ color: "#F5A623" }}
+                style={{ color: "#4299E1" }}
               >
                 {formatMoney(
                   shippingData.maxDiscountCPP * shippingData.packageCount
@@ -117,7 +117,7 @@ const ShippingCostAnalysis = () => {
               <Badge
                 variant="secondary"
                 className="mt-2"
-                style={{ backgroundColor: "#F5A62330", color: "#F5A623" }}
+                style={{ backgroundColor: "#4299E130", color: "#4299E1" }}
               >
                 <TrendingDown className="mr-1 h-3 w-3" />
                 {calculateSavings(
@@ -129,7 +129,7 @@ const ShippingCostAnalysis = () => {
             </div>
           </div>
           <div className="flex items-center justify-center text-sm text-muted-foreground">
-            <DollarSign className="h-4 w-4 mr-1" style={{ color: "#F5A623" }} />
+            <DollarSign className="h-4 w-4 mr-1" style={{ color: "#4299E1" }} />
             Optimize your shipping costs with industry-leading discounts
           </div>
         </div>

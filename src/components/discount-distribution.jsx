@@ -68,13 +68,13 @@ const BoxPlot = ({ data }) => {
           style={{
             left: `${data.q1}%`,
             right: `${100 - data.q3}%`,
-            backgroundColor: "#F5A62330",
+            backgroundColor: "#4299E130",
           }}
         />
 
         <div
           className="absolute top-0 bottom-0 w-0.5"
-          style={{ left: `${randomMedian}%`, backgroundColor: "#F5A623" }}
+          style={{ left: `${randomMedian}%`, backgroundColor: "#4299E1" }}
         />
 
         <div
@@ -82,7 +82,7 @@ const BoxPlot = ({ data }) => {
           style={{
             left: `${data.min}%`,
             transform: "translateY(-50%)",
-            backgroundColor: "#F5A623",
+            backgroundColor: "#4299E1",
           }}
         />
 
@@ -91,7 +91,7 @@ const BoxPlot = ({ data }) => {
           style={{
             left: `${data.max}%`,
             transform: "translateY(-50%)",
-            backgroundColor: "#F5A623",
+            backgroundColor: "#4299E1",
           }}
         />
 
@@ -119,10 +119,10 @@ const DiscountDistribution = () => {
   return (
     <Card
       className="mb-8"
-      style={{ backgroundColor: "#1A1B20", color: "#E5E5E5" }}
+      style={{ backgroundColor: "#1A1D21", color: "#E5E5E5" }}
     >
       <CardHeader>
-        <CardTitle style={{ color: "#F5A623" }}>
+        <CardTitle style={{ color: "#4299E1" }}>
           Discount Distribution by Shipment Category
         </CardTitle>
       </CardHeader>
@@ -134,14 +134,14 @@ const DiscountDistribution = () => {
           <div className="flex items-center">
             <div
               className="w-4 h-4 mr-2"
-              style={{ backgroundColor: "#F5A62330" }}
+              style={{ backgroundColor: "#4299E130" }}
             ></div>
             <span>Interquartile Range</span>
           </div>
           <div className="flex items-center">
             <div
               className="w-4 h-0.5 mr-2"
-              style={{ backgroundColor: "#F5A623" }}
+              style={{ backgroundColor: "#4299E1" }}
             ></div>
             <span>Median</span>
           </div>

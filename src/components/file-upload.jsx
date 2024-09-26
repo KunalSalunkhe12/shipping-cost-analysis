@@ -17,7 +17,7 @@ const FileUpload = ({ onFileUpload }) => {
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
 
   return (
-    <Card className="w-full max-w-md">
+    <Card className="w-full max-w-md pt-6">
       <CardContent>
         <div
           {...getRootProps()}
@@ -34,7 +34,7 @@ const FileUpload = ({ onFileUpload }) => {
           )}
         </div>
         <Button
-          className="w-full mt-4"
+          className="w-full mt-4 bg-[#4299E1] hover:bg-[#2B6CB0]"
           onClick={() => document.querySelector("input").click()}
         >
           Select File

@@ -29,10 +29,10 @@ const DiscountDistributionSlider = ({
   return (
     <Card
       className="w-full mb-4"
-      style={{ backgroundColor: "#1A1B20", color: "#E5E5E5" }}
+      style={{ backgroundColor: "#1A1D21", color: "#E5E5E5" }}
     >
       <CardHeader>
-        <CardTitle className="text-2xl font-bold" style={{ color: "#F5A623" }}>
+        <CardTitle className="text-2xl font-bold" style={{ color: "#4299E1" }}>
           {title}
         </CardTitle>
       </CardHeader>
@@ -40,13 +40,13 @@ const DiscountDistributionSlider = ({
         <div className="flex justify-between mb-6">
           <div className="text-center">
             <p className="text-sm text-muted-foreground">Current Cost</p>
-            <p className="text-2xl font-bold" style={{ color: "#F5A623" }}>
+            <p className="text-2xl font-bold" style={{ color: "#4299E1" }}>
               ${currentCost.toFixed(2)}
             </p>
           </div>
           <div className="text-center">
             <p className="text-sm text-muted-foreground">New Cost</p>
-            <p className="text-2xl font-bold" style={{ color: "#F5A623" }}>
+            <p className="text-2xl font-bold" style={{ color: "#4299E1" }}>
               ${newCost.toFixed(2)}
             </p>
           </div>
@@ -57,7 +57,7 @@ const DiscountDistributionSlider = ({
             <div
               key={index}
               className="w-[3.33%] mr-[0.5px]"
-              style={{ height: `${value}%`, backgroundColor: "#F5A62330" }}
+              style={{ height: `${value}%`, backgroundColor: "#4299E130" }}
             ></div>
           ))}
           <div
@@ -76,7 +76,7 @@ const DiscountDistributionSlider = ({
  height: 0;
  border-left: 10px solid transparent;
  border-right: 10px solid transparent;
- border-bottom: 20px solid #F5A623;
+ border-bottom: 20px solid #4299E1;
  background: transparent;
  cursor: pointer;
  }

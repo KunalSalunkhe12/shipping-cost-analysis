@@ -86,23 +86,23 @@ const RecommendedServices = () => {
   return (
     <div
       className="p-6 min-h-screen flex flex-col items-center"
-      style={{ backgroundColor: "#1A1B20", color: "#E5E5E5" }}
+      style={{ backgroundColor: "#1A1D21", color: "#E5E5E5" }}
     >
       <div className="w-full max-w-6xl space-y-8">
         <div className="text-center space-y-4">
-          <h1 className="text-4xl font-bold" style={{ color: "#F5A623" }}>
+          <h1 className="text-4xl font-bold" style={{ color: "#4299E1" }}>
             Recommended Services for You
           </h1>
           <div className="flex justify-center items-baseline space-x-4">
             <p className="text-2xl font-semibold">
               Current Cost:{" "}
-              <span className="text-3xl" style={{ color: "#F5A623" }}>
+              <span className="text-3xl" style={{ color: "#4299E1" }}>
                 {formatCurrency(totalCurrentCost)}
               </span>
             </p>
             <p className="text-2xl font-semibold">
               Potential Cost:{" "}
-              <span className="text-3xl" style={{ color: "#F5A623" }}>
+              <span className="text-3xl" style={{ color: "#4299E1" }}>
                 {formatCurrency(totalPotentialCost)}
               </span>
             </p>
@@ -114,20 +114,20 @@ const RecommendedServices = () => {
             <Card
               key={recommendation.id}
               className="overflow-hidden"
-              style={{ backgroundColor: "#1A1B20", color: "#E5E5E5" }}
+              style={{ backgroundColor: "#1A1D21", color: "#E5E5E5" }}
             >
-              <CardHeader style={{ backgroundColor: "#F5A62310" }}>
+              <CardHeader style={{ backgroundColor: "#4299E110" }}>
                 <div className="flex justify-between items-center">
                   <CardTitle
                     className="text-lg font-semibold"
-                    style={{ color: "#F5A623" }}
+                    style={{ color: "#4299E1" }}
                   >
                     {recommendation.title}
                   </CardTitle>
                   <Badge
                     variant="secondary"
                     className="text-sm"
-                    style={{ backgroundColor: "#F5A62330", color: "#F5A623" }}
+                    style={{ backgroundColor: "#4299E130", color: "#4299E1" }}
                   >
                     Rank #{recommendation.id}
                   </Badge>
@@ -158,13 +158,13 @@ const RecommendedServices = () => {
                       ]}
                       labelFormatter={() => "Cost"}
                       contentStyle={{
-                        backgroundColor: "#1A1B20",
-                        borderColor: "#F5A623",
+                        backgroundColor: "#1A1D21",
+                        borderColor: "#4299E1",
                       }}
                     />
 
                     <Legend />
-                    <Bar dataKey="cost" fill="#F5A623">
+                    <Bar dataKey="cost" fill="#4299E1">
                       {carriers.map((carrier, index) => (
                         <Bar
                           key={carrier}
@@ -192,13 +192,13 @@ const RecommendedServices = () => {
                         style={{
                           backgroundColor:
                             selectedCarriers[recommendation.id] === carrier
-                              ? "#F5A623"
+                              ? "#4299E1"
                               : "transparent",
                           color:
                             selectedCarriers[recommendation.id] === carrier
-                              ? "#1A1B20"
+                              ? "#1A1D21"
                               : "#E5E5E5",
-                          borderColor: "#F5A623",
+                          borderColor: "#4299E1",
                         }}
                       >
                         {carrier}
@@ -219,7 +219,7 @@ const RecommendedServices = () => {
                 <Button
                   className="mt-4 w-full"
                   onClick={() => handleSendRFP(recommendation.id)}
-                  style={{ backgroundColor: "#F5A623", color: "#1A1B20" }}
+                  style={{ backgroundColor: "#4299E1", color: "#1A1D21" }}
                 >
                   <SendIcon className="mr-2 h-4 w-4" />
                   Send RFP
